@@ -1,0 +1,32 @@
+#input1,#input2,#input3,#input4{
+    color: white;
+    background-color: blue;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-weight: 700;
+    border-width: 3px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+}
+
+.container{
+    padding: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    width: 480px;
+    margin-top: 250px;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
