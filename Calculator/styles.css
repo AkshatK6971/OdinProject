@@ -1,0 +1,89 @@
+.heading{
+    font-weight: 900;
+    font-size: 36px;
+    padding: 24px;
+}
+
+.container{
+    height: 600px;
+    width: 400px;;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    outline: 10px solid black;
+    gap: 8px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: roboto,sans-serif;
+    margin: 0;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    gap: 1px;
+}
+
+.button-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.display{
+    background-color: #CDE6CA;
+    height: 100px;
+    width: 400px;
+    font-size: 72px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.button{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#zero_div{
+    width: 200px;
+}
+
+.zero_but{
+    height: 99px;
+    width: 198px;
+}
+
+button{
+    font-size: 24px;
+    height: 99px;
+    width: 99px;
+    border-radius: 8px;
+}
+
+.misc{
+    background-color: blue;
+}
+
+.number{
+    background-color: darkolivegreen;
+}
+
+.operator{
+    background-color: orange;
+}
