@@ -1,0 +1,132 @@
+body{
+    margin:0;
+    background-color: #4d7c0f;
+    font-family: roboto, sans-serif;
+}
+
+.book_heading{
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.author{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.pages{
+    font-size: 16px;
+    margin: 0;
+}
+
+.finished{
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.book_buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 18px;
+}
+
+.book_buttons > button{
+    background-color: #4c0519;
+    color: white;
+    font-weight: 700;
+    border-radius: 16px;
+    outline: 2px solid black;
+    padding: 6px 12px;
+}
+
+.books{
+    width: 70vw;
+    min-height: 80vh;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-auto-rows: max-content;
+    padding: 24px;
+    margin-bottom: 2vh;
+    gap: 18px;
+}
+
+#heading{
+    font-weight: 700;
+    font-size: 48px;
+    margin: 12px;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 250px;
+}
+
+#showmodal{
+    background-color: #4c0519;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 36px;
+    border-radius: 16px;
+    outline: 2px solid black;
+}
+
+h2 {
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.input_reading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.input_buttons > button{
+    background-color: #4c0519;
+    color: white;
+    border-radius: 16px;
+    outline: 2px solid black;
+    font-weight: 700;
+}
+
+.book{
+    padding: 18px;
+    outline: 4px solid #4c0519;
+    color: #4c0519;
+}
+

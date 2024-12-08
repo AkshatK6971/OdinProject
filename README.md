@@ -1,2 +1,2 @@
 # OdinProject
-Connecting to remote repository.
+Collection of different projects created for practising topics taught during the OdinProject.
