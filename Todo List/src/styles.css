@@ -1,0 +1,279 @@
+body{
+    margin: 0;
+    font-family: roboto,sans-serif;
+}
+
+header{
+    font-weight: 700;
+    color: white;
+    background-color: green;
+    margin: 0;
+    padding: 12px 48px;
+    font-size: 48px;
+}
+
+header > p{
+    margin: 0;
+}
+
+.sidebar{
+    height: 100%;
+    width: 300px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar_item{
+    height: 40px;
+    width: 80%;
+    display: flex;
+    align-self: flex-start;
+    margin: 6px 24px;
+}
+
+.sidebar_item > button{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    height: 90vh;
+    margin-bottom: 2vh;
+}
+
+.todolist{
+    width: calc(100% - 300px);
+    height: 100%;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project_heading{
+    display: flex;
+    justify-content: space-between;
+    font-size: 32px;
+    width: 90%;
+    padding: 0px 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.project_heading > p{
+    margin: 0;
+}
+
+.project_item{
+    height: 40px;
+    width: 80%;
+    display: flex;
+    align-self: flex-start;
+    margin: 6px 24px;
+}
+
+.project_item > button{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sidebar > hr{
+    color: black;
+    width: 90%;
+}
+
+.project_heading > button{
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: maroon;
+    color: white;
+}
+
+.todolist_heading{
+    font-size: 36px;
+    font-weight: 700;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.task_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    padding: 0px 72px;
+}
+
+.task_heading > p{
+    margin: 0;
+}
+
+.task_heading > button{
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 8px;
+    background-color: maroon;
+    color: white;
+    height: 50px;
+    width: 50px;
+}
+
+.tasks > hr{
+    color: black;
+    width: 90%;
+}
+
+.task{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 48px;
+    font-weight: 700;
+}
+
+.todo_content{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo_rest{
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.todo_rest > button{
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: maroon;
+    color: white;
+    padding: 8px 16px;
+}
+
+h2 {
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.input_importance{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.input_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+.input_buttons > button{
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: maroon;
+    color: white;
+    padding: 8px 16px;
+}
+
+.input_importance_edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.important{
+    background-color: red;
+    opacity: 1;
+    color: white;
+}
+
+.completed {
+    opacity: 0.5;
+    background-color: black;
+    color: white;
+    text-decoration: line-through;
+}
+
+.sidebar_item > button:hover{
+    outline: 4px solid black;
+}
+
+.project_item > button:hover{
+    outline: 4px solid black;
+}
+
+#createproject:hover{
+    outline: 4px solid black;
+}
+
+#createtodo:hover{
+    outline: 4px solid black;
+}
+
+.task.completed > .todo_rest > button:hover{
+    outline: 4px solid white;
+}
+
+.task > .todo_rest > button:hover{
+    outline: 4px solid black;
+}
+
+.input_buttons > button:hover{
+    outline: 4px solid black;
+}
+
