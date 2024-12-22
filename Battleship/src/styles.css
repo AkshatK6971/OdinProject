@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    font-family: roboto, sans-serif;
+}
+
+#submit:hover, #restart:hover, #rearrange:hover, #start:hover{
+    outline: 4px solid white;
+}
+
+.heading > p{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+    padding: 12px;
+}
+
+.heading{
+    color: white;
+    background-color: green;
+}
+
+.content{
+    background-color: whitesmoke;
+    height: 85vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    height: 30%;
+    width: 30%;
+}
+
+label{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+input{
+    height: 30%;
+    width: 90%;
+    border-radius: 16px;
+    outline: 2px solid black;
+    padding: 12px;
+    font-size: 24px;
+}
+
+#submit{
+    font-size: 24px;
+    border-radius: 16px;
+    outline: 2px black solid;
+    padding: 12px;
+    font-weight: 700;
+    display: flex;
+    justify-self: center;
+    margin-top: 36px;
+    color: white;
+    background-color: maroon;
+}
+
+.board1, .board2{
+    display: flex;
+    flex-direction: column;
+}
+
+.board1 > p, .board2 > p{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 12px;
+    text-align: center;
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+}
+
+.cell{
+    width: 45px;
+    height: 45px;
+    outline: 2px solid black;
+    background-color: white;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    gap: 48px;
+}
+
+.boards{
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+}
+
+#restart, #rearrange, #start{
+    font-size: 18px;
+    border-radius: 16px;
+    outline: 3px black solid;
+    padding: 12px 18px;
+    font-weight: 700;
+    margin-top: 36px;
+    color: white;
+    background-color: maroon;
+}
+
+.cell:hover{
+    background-color: lightblue;
+}
+
+.ship{
+    background-color: lightblue;
+    box-shadow: inset 0 0 0 2px blue;
+}
+
+.hit{
+    background-color: red;
+    color: yellow;
+    box-shadow: 0 0 0 0;
+}

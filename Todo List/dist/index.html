@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TODO List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="main.js"></script></head>
+  <body>
+    <header>
+      <p>My TO-DO List</p>
+    </header>
+    <div class="content">
+      <div class="sidebar">
+        <div class="sidebar_item">
+          <button id="all_but" type="button">All</button>
+        </div>
+        <div class="sidebar_item">
+          <button id="important_but" type="button">Important</button>
+        </div>
+        <div class="sidebar_item">
+          <button id="completed_but" type="button">Completed</button>
+        </div>
+        <div class="project_heading">
+          <p>Projects</p>
+          <button id="createproject" type="button">+</button>
+        </div>
+        <hr>
+        <dialog class="modal_project">
+          <h2>Add New Project</h2>
+          <form>
+              <div class="input">
+                  <label for="project_name">Name:</label>
+                  <input type="text" id="project_name">
+              </div>
+              <div class="input_buttons">
+                  <button id="addproject" type="submit">Add Project</button>
+                  <button id="closeprojectmodal" type="button">Cancel</button>
+              </div>
+          </form>
+      </dialog>
+        <div class="projects">
+        </div>
+      </div>
+      <div class="todolist">
+        <div class="todolist_heading">
+          <p>All Tasks</p>
+        </div>
+        <div class="tasks">
+          <div class="task_heading">
+            <p>Tasks</p>
+            <button id="createtodo" type="button">+</button>
+          </div>
+          <dialog class="todo_modal">
+            <h2>Add New Todo</h2>
+            <form>
+                <div class="input">
+                    <label for="todo_name">Title:</label>
+                    <input type="text" id="todo_name">
+                </div>
+                <div class="input">
+                    <label for="description">Description:</label>
+                    <input type="text" id="description">
+                </div>
+                <div class="input">
+                    <label for="date">Due Date:</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="input_importance">
+                    <label for="important">Important?</label>
+                    <input type="checkbox" id="important">
+                </div>
+                <div class="input_buttons">
+                    <button id="addtodo" type="submit">Add Todo</button>
+                    <button id="closetodomodal" type="button">Cancel</button>
+                </div>
+            </form>
+          </dialog>
+          <hr>
+          <div class="todos">
+          </div>
+          <dialog class="todo_modal_edit">
+            <h2>Edit Todo</h2>
+            <form>
+                <div class="input">
+                    <label for="todo_name_edit">Title:</label>
+                    <input type="text" id="todo_name_edit">
+                </div>
+                <div class="input">
+                    <label for="description_edit">Description:</label>
+                    <input type="text" id="description_edit">
+                </div>
+                <div class="input">
+                    <label for="date_edit">Due Date:</label>
+                    <input type="date" id="date_edit">
+                </div>
+                <div class="input_importance_edit">
+                    <label for="important_edit">Important?</label>
+                    <input type="checkbox" id="important_edit">
+                </div>
+                <div class="input_buttons">
+                    <button id="edittodo" type="submit">Save</button>
+                    <button id="closetodomodal_edit" type="button">Cancel</button>
+                </div>
+            </form>
+          </dialog>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
