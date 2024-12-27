@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title><%= title %></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form method="POST" action="/new">
+            <div class="input">
+                <label for="user">Name:</label>
+                <input type="text" id="user" name="user">
+            </div>
+            <div class="input">
+                <label for="text">Message:</label>
+                <input type="text" id="text" name="text">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
