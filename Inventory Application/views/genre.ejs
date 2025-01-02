@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Genres</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div class="genre">
+            <h2><%= genre.name %></h2>
+            <div class="movies">
+                <% rows.map((movie, index) => { %>
+                    <div class="movie">
+                        <p><%= index+1 %></p>
+                        <p><%=  movie.name %></p>
+                <% })%>
+            </div>
+            <a href=<%= `/genres/${genre.id}/update` %>>Update</a>
+            <a href=<%= `/genres/${genre.id}/delete` %>>Delete</a>
+        </div>  
+    </body>
+</html>
