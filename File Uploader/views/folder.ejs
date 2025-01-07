@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>File Uploader</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <% if(locals.message){ %>
+            <h2><%= message %></h2>
+        <%} else{%>
+            <a href=<%= `/folder/${id}/create` %>>Create Folder</a>
+            <a href=<%= `/file/${id}/create` %>>Upload Files</a>
+            <% folders.map((folder) => { %>
+                <h2>Folder: <a href=<%=` /folder/${folder.id}`%>> <%= folder.name %></a></h2>
+            <% }) %>
+            <% files.map((file) => { %>
+                <h2>File: <a href=<%=`/file/${file.id}`%>> <%= file.name %></a></h2>
+            <% }) %>
+            <a href=<%= `/folder/${id}/update` %>>Update</a>
+            <a href=<%= `/folder/${id}/delete` %>>Delete</a>
+        <%}%>
+    </body>
+</html>

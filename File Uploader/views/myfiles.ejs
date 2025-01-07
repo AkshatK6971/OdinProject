@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>File Uploader</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>My Files</h1>
+        <a href="/folder/create">Create Folder</a>
+        <a href="/file/create">Upload Files</a>
+        <% if(user && user.Folder){ %>
+            <% user.Folder.map((folder) => { %>
+                <% if(!folder.parentFolderId){ %>
+                    <h2>Folder: <a href=<%=` /folder/${folder.id}`%>> <%= folder.name %></a></h2>
+                <%}%>
+            <% }) %>
+        <% } %>
+
+        <% if(user && user.File){ %>
+            <% user.File.map((file) => { %>
+                <% if(!file.folderId){ %>
+                    <h2>File: <a href=<%=` /file/${file.id}`%>> <%= file.name %></a></h2>
+                <%}%>
+            <% }) %>
+        <% } %>
+    </body>
+</html>

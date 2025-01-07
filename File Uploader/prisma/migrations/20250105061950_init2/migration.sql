@@ -1,0 +1,9 @@
+-- AlterTable
+ALTER TABLE "File" ALTER COLUMN "name" SET DATA TYPE TEXT;
+
+-- AlterTable
+ALTER TABLE "Folder" ALTER COLUMN "name" SET DATA TYPE TEXT;
+
+-- AlterTable
+ALTER TABLE "UserAccount" ALTER COLUMN "firstName" SET DATA TYPE TEXT,
+ALTER COLUMN "lastName" SET DATA TYPE TEXT;
