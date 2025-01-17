@@ -1,0 +1,188 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.heading{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+    background-color: green;
+}
+
+nav > p{
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 700;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.links > a{
+    font-size: 1.3rem;
+    color: white;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    font-weight: 700;
+}
+
+.blog > a{
+    color: blue;
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+    padding: 5% 10%;
+
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 10%;
+    border-radius: 16px;
+}
+
+.blog_single{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comments{
+    padding: 2.5%;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.comment{
+    background-color: white;
+    padding: 2.5% 5%;
+    border-radius: 16px;
+}
+
+.comment_heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment_links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.comment_links > p {
+    color: blue;
+}
+
+.comment_links > p:hover {
+    cursor: pointer;
+}
+
+button{
+    color: white;
+    background-color: maroon;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 6px 12px;
+    outline: 3px solid black;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+button:hover{
+    cursor: pointer;
+    outline: 4px solid white;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label{
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comment_add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.comment_update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.error{
+    font-size: 1.25em;
+    font-weight: 700;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
